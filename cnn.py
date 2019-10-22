@@ -10,9 +10,9 @@ class cnn:
         self.__entrenamiento = train()
         self.__predecir = predict()
         self.__connection = mysql.connector.connect(host='localhost',
-                                                 database='test',
-                                                 user='root',
-                                                 password='Recovery')
+                                                 database='####',
+                                                 user='####',
+                                                 password='####')
 
 #falta el id de la tranascripcion
     def save_transcription(self, transcript, id):
