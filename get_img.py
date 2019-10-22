@@ -11,9 +11,9 @@ class get_img:
     def get_dir_img(self, id):
         try:
             connection = mysql.connector.connect(host='localhost',
-                                                 database='transcript',
-                                                 user='root',
-                                                 password='Recovery')
+                                                 database='####',
+                                                 user='####',
+                                                 password='####')
             cursor = connection.cursor()
             cursor.execute("SELECT t.* from transcripcion t INNER JOIN usuario u INNER JOIN usuario_transcripcion ut ON u.id = ut.fkIdUsuario AND t.id = fkIdTranscripcion WHERE u.id = '"+id+"'")
             records = cursor.fetchall()
